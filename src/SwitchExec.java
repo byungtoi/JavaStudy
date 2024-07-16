@@ -48,6 +48,8 @@ public class SwitchExec {
 			System.out.println("[" + i + "]번째  합은 = [" + tot + "]요~ ");
 		}
 		
+		
+		// 수정 - git TEST sss
 
 		int x = 0;
 		int y = 0;
