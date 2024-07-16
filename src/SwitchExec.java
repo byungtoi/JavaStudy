@@ -6,24 +6,16 @@ public class SwitchExec {
 		int month = 2;
 		
 		switch(month) {
-		case 3:
-		case 4:
-		case 5:
+		case 3:		case 4:		case 5:
 			System.out.println("[" + month + "]월이군요~ 봄입니다");
 			break;
-		case 6:
-		case 7:
-		case 8:
+		case 6:		case 7:		case 8:
 			System.out.println("[" + month + "]월이군요~ 여름입니다");
 			break;
-		case 9:
-		case 10:
-		case 11:
+		case 9:		case 10:		case 11:
 			System.out.println("[" + month + "]월이군요~ 가을입니다");
 			break;
-		case 1:
-		case 2:
-		case 12:
+		case 1:		case 2:		case 12:
 			System.out.println("[" + month + "]월이군요~ 겨울입니다");
 			break;
 		default:
@@ -47,6 +39,16 @@ public class SwitchExec {
 			tot += i;
 			System.out.println("[" + i + "]번째  합은 = [" + tot + "]요~ ");
 		}
+
+		
+		
+		int tot2 = 0;
+		for (int i=1;i<=100;) {
+			tot2 += i;
+			System.out.println("홀수 [" + i + "]번째  합은 = [" + tot2 + "]요~ ");
+			i += 2;
+		}
+
 		
 		
 		// 구구단
@@ -72,8 +74,22 @@ public class SwitchExec {
 		}	
 
 		
+		int tot117 = 0;
+		for (int m1=1;m1<=1000;m1++) {
+			if ((m1 % 11 == 0) && (m1 % 7 == 0)) {
+				tot117 = m1;
+				System.out.println( " m1 = [" + m1 + "] ");
+				break;
+			}
+		}	
 		
-			
+		int cnt57 = 0;
+		for (int m2=1;m2<=1000;m2++) {
+			if ((m2 % 5 == 0) && (m2 % 7 == 0)) {
+				cnt57++;
+				System.out.println( " m2 = [" + m2 + "] [" + cnt57 + "]");
+			}
+		}		
 	}
 
 }
