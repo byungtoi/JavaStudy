@@ -11,8 +11,10 @@ public class NineNine {
 				for (x=2;x<=9;x++) {
 					System.out.println("================================");
 					System.out.println(x + "단을 출력합니다");
+					//if (x % 2 != 0) continue;
 					for (y=1;y<=9;y++) {
 						xy = x * y;
+						if (xy % 2 == 0) continue;
 						System.out.println(x + " X " + y + " = " + xy );
 					}
 				}
